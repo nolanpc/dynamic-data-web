@@ -12,7 +12,7 @@ const Hero = () => {
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
                 <h1 className="mb-5 text-left text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Impulsamos la evolución tecnológica de su empresa.
+                  Impulsamos la evolución tecnológica de tu empresa.
                 </h1>
                 <p className="mb-8 text-left text-lg font-medium leading-relaxed text-slate-600 dark:text-slate-400 max-w-[700px]">
                   Utilizamos la tecnología para resolver los problemas más difíciles del negocio.
@@ -26,7 +26,7 @@ const Hero = () => {
                     🗣️ Inicia una consulta
                   </Link>
                   <Link
-                    href="https://github.com/NextJSTemplates/startup-nextjs"
+                    href="http://localhost:3000/contact"
                     className="inline-block rounded-xs bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
                     Cómo trabajamos
