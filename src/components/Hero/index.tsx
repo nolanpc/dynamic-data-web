@@ -11,11 +11,12 @@ const Hero = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Ingeniería tecnológica de alto impacto para la evolución de su negocio.
+                <h1 className="mb-5 text-left text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                  Impulsamos la evolución tecnológica de su empresa.
                 </h1>
-                <p className="mb-12 text-base leading-relaxed! text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Brindamos soluciones tecnológicas integrales con un enfoque en la comunicación efectiva y la precisión técnica. Nos convertimos en el brazo tecnológico de su empresa para modernizar su infraestructura o materializar su visión de producto, eliminando la incertidumbre técnica mediante un compromiso absoluto con la calidad del código y los tiempos de entrega.
+                <p className="mb-8 text-left text-lg font-medium leading-relaxed text-slate-600 dark:text-slate-400 max-w-[700px]">
+                  Utilizamos la tecnología para resolver los problemas más difíciles del negocio.
+                  Desde la <span className="text-black dark:text-white font-semibold">modernización de infraestructuras críticas</span> hasta el despliegue de productos digitales de alto rendimiento, ayudamos a empresas y clientes a operar de forma más inteligente y rápida.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
