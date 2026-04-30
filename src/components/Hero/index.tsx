@@ -18,7 +18,7 @@ const Hero = () => {
                   Utilizamos la tecnología para resolver los problemas más difíciles del negocio.
                   Desde la <span className="text-black dark:text-white font-semibold">modernización de infraestructuras críticas</span> hasta el despliegue de productos digitales de alto rendimiento, ayudamos a empresas y clientes a operar de forma más inteligente y rápida.
                 </p>
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+                <div className="flex flex-col items-center text-left space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
                     href="http://localhost:3000/contact"
                     className="rounded-xs bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
