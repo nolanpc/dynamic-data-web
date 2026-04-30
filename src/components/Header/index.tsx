@@ -57,18 +57,22 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src="/images/logo/ddv2black.jpg"
+                  src="/images/logo/ddv2black.png"
                   alt="logo"
                   width={140}
                   height={30}
                   className="w-full dark:hidden"
+                  style={{ width: "7em", height: "4em" }}
+
                 />
                 <Image
-                  src="/images/logo/ddv2.jpg"
+                  src="/images/logo/ddv2.png"
                   alt="logo"
                   width={140}
                   height={30}
                   className="hidden w-full dark:block"
+                  style={{ width: "7em", height: "4em" }}
+
                 />
               </Link>
             </div>
