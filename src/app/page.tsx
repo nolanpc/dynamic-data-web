@@ -12,8 +12,8 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "dynamic data",
-  description: "dynamic data",
+  title: "Dynamic Data",
+  description: "Dynamic Data",
   // other metadata
 };
 
