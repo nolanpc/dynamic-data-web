@@ -4,7 +4,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm ci
 COPY . .
-RUN npm run build --configuration=production
+RUN npm run build
 
 # Etapa 2: Servidor Estático (Producción)
 FROM nginx:stable-alpine
