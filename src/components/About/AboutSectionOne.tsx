@@ -25,7 +25,7 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Soluciones a medida, diseñadas para perdurar."
-                paragraph="No solo escribimos código; nos involucramos en tu arquitectura para asegurar que cada decisión técnica impulse el crecimiento de tu empresa."
+                paragraph="No solo escribimos código; nos involucramos en tu arquitectura para garantizar que cada decisión técnica impulse el crecimiento de tu empresa."
                 mb="44px"
               />
 
