@@ -1,21 +1,42 @@
-# Etapa 1: Construcción
-FROM node:20-alpine AS build
+# --- ETAPA 1: Dependencias ---
+FROM node:23-alpine AS deps
+RUN apk add --no-cache libc6-compat
 WORKDIR /app
-COPY package*.json ./
+
+# Aprovechamos el caché de capas de Docker
+COPY package.json package-lock.json* ./
 RUN npm ci
+
+# --- ETAPA 2: Construcción ---
+FROM node:23-alpine AS builder
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
 COPY . .
+
+# Desactivar telemetría de Next.js durante el build
+ENV NEXT_TELEMETRY_DISABLED 1
 RUN npm run build
 
-# Etapa 2: Servidor Estático (Producción)
-FROM nginx:stable-alpine
-RUN rm /etc/nginx/conf.d/default.conf
+# --- ETAPA 3: Ejecución (Producción) ---
+FROM node:23-alpine AS runner
+WORKDIR /app
 
-# Copia los archivos compilados desde la etapa de build
-COPY --from=build /app/out /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/nginx.conf
+ENV NODE_ENV production
+ENV NEXT_TELEMETRY_DISABLED 1
 
-# Corrección de permisos para evitar el error 403
-RUN chmod -R 755 /usr/share/nginx/html && chown -R nginx:nginx /usr/share/nginx/html
+# Crear un usuario de sistema para no correr como root (Seguridad)
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
 
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+# IMPORTANTE: Next.js copia los archivos necesarios a .next/standalone
+COPY --from=builder /app/public ./public
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+
+USER nextjs
+
+EXPOSE 3000
+ENV PORT 3000
+
+# El servidor standalone se lanza con server.js
+CMD ["node", "server.js"]
