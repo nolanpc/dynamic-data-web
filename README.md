@@ -63,7 +63,13 @@ Sigue estos pasos para ejecutar el proyecto en tu máquina:
 
 ## ℹ️ Nota sobre configuración
 
-- El proyecto no requiere variables de entorno especiales para correr localmente.
+- El proyecto puede ejecutarse localmente sin variables de entorno.
+- El envío de correo se maneja desde la API interna de Next.js en `src/app/api/contact/route.ts`.
+- Puedes usar SendGrid o SMTP con las siguientes variables:
+  - SendGrid: `SENDGRID_API_KEY`, `SENDGRID_TO_EMAIL`, `SENDGRID_FROM_EMAIL`
+  - SMTP: `HOST_EMAIL`, `PORT_EMAIL`, `USER_EMAIL`, `PASS_EMAIL`, `SECURE_EMAIL`, `REQUIRE_TLS_EMAIL`, `EMAIL_REJECT_UNAUTHORIZED`, `EMAIL_FROM`, `EMAIL_TO`
+- Si configuras SMTP, el sistema usará esas variables aunque no tengas `SENDGRID_API_KEY`.
+- La carpeta `backend/` ya no es necesaria para el funcionamiento del sitio.
 - Si deseas usar otro gestor de paquetes, `npm` es el recomendado porque el repositorio incluye `package-lock.json`.
 
 ## 📁 Estructura principal del proyecto
