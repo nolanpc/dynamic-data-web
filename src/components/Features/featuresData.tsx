@@ -37,7 +37,7 @@ const featuresData: Feature[] = [
     ),
     title: "Stack Moderno",
     paragraph:
-      "Dominamos las tecnologías más eficientes para el desarrollo web moderno, como [ej: Next.js y Node.js], permitiéndonos entregar soluciones de alto rendimiento sin reinventar la rueda.",
+      "Dominamos las tecnologías más eficientes para el desarrollo web moderno como Next.js y Node.js, permitiéndonos entregar soluciones de alto rendimiento sin reinventar la rueda.",
   },
   {
     id: 4,
@@ -73,7 +73,7 @@ const featuresData: Feature[] = [
     ),
     title: "Código y Procesos Transparentes",
     paragraph:
-      "Creemos en la total transparencia. Tendrás acceso total a nuestro código y paneles de progreso. Te entregamos documentación clara y completa para que el control siempre sea tuyo.",
+      "Creemos en la transparencia total. Tendrás acceso a nuestro código y paneles de progreso. Te entregamos documentación clara y completa para que el control siempre sea tuyo.",
   },
 ];
 

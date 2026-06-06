@@ -11,7 +11,7 @@ const brandsData: Brand[] = [
   {
     id: 1,
     name: "UIdeck",
-    href: "https://uideck.com",
+    href: "https://dynamicdata.tech",
     image: "/images/brands/uideck.svg",
     imageLight: "/images/brands/uideck-light.svg",
   },

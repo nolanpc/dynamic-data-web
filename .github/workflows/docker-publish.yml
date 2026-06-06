@@ -3,18 +3,25 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - develop  # O 'master', cámbialo según tu rama principal
-
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+      - develop
 
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout del código
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Calcular siguiente versión (SemVer)
+        id: tag_version
+        uses: mathieudutour/github-tag-action@v6.2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          default_bump: patch
 
       - name: Iniciar sesión en Docker Hub
         uses: docker/login-action@v3
@@ -29,4 +36,4 @@ jobs:
           push: true
           tags: |
             eduarddelg/dynamicdata-site:latest
-            eduarddelg/dynamicdata-site:${{ github.sha }}
+            eduarddelg/dynamicdata-site:${{ steps.tag_version.outputs.new_version }}
