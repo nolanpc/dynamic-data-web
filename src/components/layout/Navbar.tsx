@@ -7,7 +7,6 @@ import Button from "@/components/ui/Button";
 import ThemeToggler from "./ThemeToggler";
 
 const links = [
-  { href: "/", label: "Inicio" },
   { href: "/servicios", label: "Servicios" },
   { href: "/como-trabajamos", label: "Cómo trabajamos" },
   { href: "/nuestra-historia", label: "Nuestra historia" },
