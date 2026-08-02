@@ -19,7 +19,11 @@ layer(base);
   --color-white: #ffffff;
   --color-black: #121723;
   --color-dark: #1d2430;
-  --color-primary: #4a6cf7;
+  --color-primary: #478ac9;
+  --color-primary-light: #8cb9e4;
+  --color-navy: #1a3255;
+  --color-peach: #efa48d;
+  --color-nav-text: #4a535a;
   --color-yellow: #fbb040;
   --color-bg-color-dark: #171c28;
 

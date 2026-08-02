@@ -1,34 +1,26 @@
-import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import AboutSectionThree from "@/components/About/AboutSectionThree";
-import Blog from "@/components/Blog";
-import ScrollUp from "@/components/Common/ScrollUp";
-import Contact from "@/components/Contact";
-import Features from "@/components/Features";
-import Hero from "@/components/Hero";
 import { Metadata } from "next";
+import HeroSection from "@/components/sections/home/HeroSection";
+import ServicesPreviewSection from "@/components/sections/home/ServicesPreviewSection";
+import WorkflowPreviewSection from "@/components/sections/home/WorkflowPreviewSection";
+import StoryPreviewSection from "@/components/sections/home/StoryPreviewSection";
+import CtaBanner from "@/components/shared/CtaBanner";
 
 export const metadata: Metadata = {
   title: "Dynamic Data",
-  description: "Dynamic Data",
-  // other metadata
+  description: "Moderniza tu operación, sin frenar tu crecimiento.",
 };
 
 export default function Home() {
   return (
     <>
-      <ScrollUp />
-      <Hero />
-      <Features />
-      {/* <Video />
-      <Brands />*/}
-      <AboutSectionOne />
-      <AboutSectionTwo />
-      <AboutSectionThree />
-      {/* <Testimonials />*/}
-      {/*<Pricing />*/}
-      <Blog />
-      <Contact />
+      <HeroSection />
+      <ServicesPreviewSection />
+      <WorkflowPreviewSection />
+      <StoryPreviewSection />
+      <CtaBanner
+        title="¿Listos para modernizar tu operación?"
+        buttonLabel="Agenda una asesoría"
+      />
     </>
   );
 }
