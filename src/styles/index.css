@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap')
 layer(base);
 
 @import 'tailwindcss';
@@ -19,10 +19,16 @@ layer(base);
   --color-white: #ffffff;
   --color-black: #121723;
   --color-dark: #1d2430;
-  --color-primary: #478ac9;
-  --color-primary-light: #8cb9e4;
-  --color-navy: #1a3255;
-  --color-peach: #efa48d;
+
+  /* Marca: paleta principal (azules) */
+  --color-navy: #042c53;
+  --color-primary: #185fa5;
+  --color-primary-medium: #378add;
+  --color-primary-light: #85b7eb;
+
+  /* Marca: acento */
+  --color-peach: #f0997b;
+
   --color-nav-text: #4a535a;
   --color-yellow: #fbb040;
   --color-bg-color-dark: #171c28;
@@ -46,6 +52,11 @@ layer(base);
   --color-gray-950: #030712;
   --color-gray-dark: #1e232e;
   --color-gray-light: #f0f2f9;
+
+  /* Marca: neutros */
+  --color-brand-dark: #2c2c2a;
+  --color-brand-gray: #888780;
+  --color-brand-light: #f1efe8;
 
   --shadow-sign-up: 0px 5px 10px rgba(4, 10, 34, 0.2);
   --shadow-one: 0px 2px 3px rgba(7, 7, 77, 0.05);
@@ -128,7 +139,7 @@ layer(base);
 
 @layer base {
   body {
-    font-family: "Inter", sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 }
 
