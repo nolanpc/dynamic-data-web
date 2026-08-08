@@ -18,8 +18,8 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-stroke-stroke bg-white/90 backdrop-blur dark:border-stroke-dark dark:bg-black/90">
-      <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center">
+      <div className="container flex h-16 items-center justify-center">
+        <Link href="/" className="flex items-center mx-4">
           <Image
             src="/images/logo/logo.png"
             alt="DynamicData"
@@ -30,7 +30,7 @@ export default function Navbar() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-8 md:flex mx-8">
           {links.map((link) => (
             <Link
               key={link.href}
@@ -42,7 +42,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center gap-3 md:flex mx-10">
           <ThemeToggler />
           <Button href="/contacto" variant="navy">Hablemos</Button>
         </div>

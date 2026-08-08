@@ -20,13 +20,13 @@ layer(base);
   --color-black: #121723;
   --color-dark: #1d2430;
 
-  /* Marca: paleta principal (azules) */
+  /* Principales: Azules */
   --color-navy: #042c53;
   --color-primary: #185fa5;
   --color-primary-medium: #378add;
   --color-primary-light: #85b7eb;
 
-  /* Marca: acento */
+  /* Acento: Toque divertido */
   --color-peach: #f0997b;
 
   --color-nav-text: #4a535a;
@@ -53,7 +53,7 @@ layer(base);
   --color-gray-dark: #1e232e;
   --color-gray-light: #f0f2f9;
 
-  /* Marca: neutros */
+  /* Neutros */
   --color-brand-dark: #2c2c2a;
   --color-brand-gray: #888780;
   --color-brand-light: #f1efe8;

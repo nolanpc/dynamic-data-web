@@ -22,7 +22,7 @@ export default function Button({
   className = "",
   ...props
 }: ButtonProps) {
-  const classes = `inline-flex items-center justify-center rounded-md px-6 py-3 text-sm font-semibold transition ${styles[variant]} ${className}`;
+  const classes = `inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition ${styles[variant]} ${className}`;
 
   if (href) {
     return (
