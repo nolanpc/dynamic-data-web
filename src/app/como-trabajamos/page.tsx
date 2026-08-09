@@ -23,7 +23,8 @@ export default function ComoTrabajamosPage() {
       <ToolsSection />
       <CtaBanner
         title="¿Listos para el primer paso?"
-        buttonLabel="Agenda una asesoría"
+        description="El diagnóstico inicial no tiene costo ni compromiso — solo una conversación honesta sobre tu negocio."
+        buttonLabel="Agenda tu diagnóstico"
       />
     </>
   );
