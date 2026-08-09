@@ -3,10 +3,10 @@ import DecorativeShapes from "./DecorativeShapes";
 
 type CtaBannerProps = {
   title: string;
-  description: string;
-  buttonColor: string;
-  buttonTextColor: string;
-  buttonHoverColor: string;
+  description?: string;
+  buttonColor?: string;
+  buttonTextColor?: string;
+  buttonHoverColor?: string;
   buttonLabel: string;
   buttonHref?: string;
 };
@@ -21,19 +21,19 @@ export default function CtaBanner({
   buttonTextColor = "text-white",
 }: CtaBannerProps) {
   return (
-    <section className="w-full px-6 sm:px-12 lg:px-50 md:py-12 lg:py-12">
+    <section className="w-full px-6 sm:px-12 lg:px-75 md:py-12 lg:py-12">
       <div className="relative overflow-hidden rounded-2xl bg-navy px-8 py-12 md:py-12">
         <DecorativeShapes />
-        <div className="grid grid-rows-[70%_1fr] md:grid-cols-[60%_1fr] md:flex-row items-center justify-between gap-4 md:gap-8">
-          <div className="flex-1 pr-0 md:pr-40">
-            <h3 className="relative mb-4 text-2xl font-bold text-white sm:text-3xl">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] items-center gap-6 md:gap-8">
+          <div className="pr-0 md:pr-12">
+            <h3 className="relative mb-4 text-2xl font-bold text-white sm:text-3xl pe-0 md:pe-20">
               {title}
             </h3>
             <p className="relative text-lg text-gray-300">
               {description}
             </p>
           </div>
-          <div className="text-center">
+          <div className="text-center md:text-center">
             <Button href={buttonHref} className={`relative ${buttonColor} ${buttonTextColor} hover:${buttonHoverColor}`}>
               {buttonLabel}
             </Button>

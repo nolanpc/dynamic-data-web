@@ -13,8 +13,9 @@ export default function ServiciosPage() {
     <>
       <PageHeader
         eyebrow="Servicios"
+        subheading="QUÉ HACEMOS"
         title="Cuatro formas de mover tu negocio hacia adelante"
-        description="Elige por dónde empezar, nosotros nos encargamos del resto."
+        description="No creemos en soluciones genéricas. Cada servicio empieza con una conversación sobre cómo operas hoy, para que lo que construyamos resuelva algo real — no para venderte más de lo que necesitas."
       />
       <ServicesListSection />
       <CtaBanner
