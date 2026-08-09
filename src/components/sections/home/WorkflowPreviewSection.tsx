@@ -20,7 +20,7 @@ export default function WorkflowPreviewSection() {
     <section className="bg-navy py-16">
       <div className="container">
         <SectionHeading
-          eyebrow="Cómo trabajamos"
+          eyebrow={undefined}
           title="Tres pasos, sin sorpresas"
           theme="dark"
         />

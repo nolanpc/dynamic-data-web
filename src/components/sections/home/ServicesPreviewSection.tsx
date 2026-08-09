@@ -24,7 +24,7 @@ export default function ServicesPreviewSection() {
   return (
     <section className="container py-16">
       <SectionHeading
-        eyebrow="Servicios"
+        eyebrow={undefined}
         title="Cuatro formas de mover tu negocio hacia adelante"
         description="Elige por dónde empezar, nosotros nos encargamos del resto."
       />
