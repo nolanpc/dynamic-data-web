@@ -19,7 +19,8 @@ export default function Home() {
       <StoryPreviewSection />
       <CtaBanner
         title="¿Listos para modernizar tu operación?"
-        buttonLabel="Agenda una asesoría"
+        description="Cuéntanos en qué punto está tu negocio hoy y en 24 horas te contactamos con una propuesta clara, sin compromiso."
+        buttonLabel="Hablemos de tu proyecto"
       />
     </>
   );

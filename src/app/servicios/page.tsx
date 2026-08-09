@@ -22,9 +22,6 @@ export default function ServiciosPage() {
         title="¿No sabes cuál de estos servicios necesitas?"
         description="Cuéntanos qué te trae por aquí y te ayudamos a descubrirlo, sin compromiso."
         buttonLabel="Hablemos de tu proyecto"
-        buttonColor="!bg-peach"
-        buttonHoverColor="!bg-peach/90"
-        buttonTextColor="!text-white"
       />
     </>
   );

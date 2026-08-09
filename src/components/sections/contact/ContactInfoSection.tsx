@@ -1,6 +1,6 @@
 const info = [
-  { label: "Correo", value: "hola@dynamicdata.com" },
-  { label: "Teléfono", value: "+56 9 0000 0000" },
+  { label: "Correo", value: "contact@dynamicdata.tech" },
+  { label: "Teléfono", value: "+58 412 996 3878" },
   { label: "Redes sociales", value: "@dynamicdata" },
 ];
 
