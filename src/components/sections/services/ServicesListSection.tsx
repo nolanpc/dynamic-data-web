@@ -109,8 +109,13 @@ export default function ServicesListSection() {
                         {index + 1}
                       </div>
                       <div>
+<<<<<<< HEAD
+                        <span className="block text-base font-bold text-navy">
+                          {bullet.title}
+=======
                         <span className="block text-base text-navy">
                           <strong>{bullet.title}</strong>
+>>>>>>> afa332e3def006be833ac18717643438809ac76b
                         </span>
                         <span className="block text-sm text-gray-500 dark:text-navy mt-1">
                           {bullet.description}
