@@ -15,6 +15,7 @@ export default function ComoTrabajamosPage() {
     <>
       <PageHeader
         eyebrow="Cómo trabajamos"
+        subheading="NUESTRO PROCESO"
         title="Tres pasos, sin sorpresas ni letra chica"
         description="Sabes exactamente qué esperar en cada etapa de tu proyecto."
       />

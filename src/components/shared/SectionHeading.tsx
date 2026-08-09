@@ -1,5 +1,8 @@
+import Link from "next/link";
+
 type SectionHeadingProps = {
   eyebrow?: string;
+  subheading?: string;
   title: string;
   description?: string;
   align?: "left" | "center";
@@ -8,6 +11,7 @@ type SectionHeadingProps = {
 
 export default function SectionHeading({
   eyebrow,
+  subheading,
   title,
   description,
   align = "left",
@@ -16,19 +20,37 @@ export default function SectionHeading({
   const isDark = theme === "dark";
 
   return (
-    <div className={`max-w-2xl ${align === "center" ? "mx-auto text-center" : ""}`}>
+    <div className={`max-w-2xl px-10 ${align === "center" ? "mx-auto text-center" : ""}`}>
+
       {eyebrow && (
-        <span
-          className={`mb-2 block text-sm font-semibold uppercase tracking-wide ${
-            isDark ? "text-primary-light" : "text-primary"
-          }`}
-        >
-          {eyebrow}
-        </span>
+        <nav aria-label="Breadcrumb" className="mb-2 block text-sm font-semibold tracking-wide">
+          <ol className="flex items-center space-x-2">
+            <li>
+              <Link href="/" className="text-gray-500 hover:underline">
+                Inicio
+              </Link>
+            </li>
+            <span className="text-gray-400" aria-hidden="true">/</span>
+            <li>
+              <span className={isDark ? "text-gray-400" : "text-gray-400"}>
+                {eyebrow}
+              </span>
+            </li>
+          </ol>
+        </nav>
       )}
+
       <h2
-        className={`mb-3 text-2xl font-bold sm:text-3xl ${
-          isDark ? "text-white" : "text-black dark:text-white"
+        className={`mt-5 mb-3 text-sm font-bold sm:text-sm ${
+          isDark ? "text-primary-medium" : "text-primary-medium dark:text-white"
+        }`}
+      >
+        {subheading}
+      </h2>
+
+      <h2
+        className={`mb-3 text-2xl font-bold sm:text-5xl ${
+          isDark ? "text-white" : "text-navy dark:text-white"
         }`}
       >
         {title}

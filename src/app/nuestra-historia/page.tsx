@@ -15,6 +15,7 @@ export default function NuestraHistoriaPage() {
     <>
       <PageHeader
         eyebrow="Nuestra historia"
+        subheading="QUIÉNES SOMOS"
         title="Estamos empezando — y lo decimos con orgullo"
         description="Un equipo nuevo, con toda la atención puesta en cada proyecto."
       />

@@ -86,7 +86,7 @@ const services = [
 export default function ServicesListSection() {
   return (
     <section className="py-16">
-      <div className="w-full px-6 sm:px-12 lg:px-50">
+      <div className="w-full px-6 sm:px-60 lg:px-70">
         <div className="space-y-8">
           {services.map((service) => (
             <Card key={service.title} className="grid gap-6 md:grid-cols-2 items-start border-0 !shadow-none bg-transparent">

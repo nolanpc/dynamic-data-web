@@ -13,6 +13,7 @@ export default function ContactoPage() {
     <>
       <PageHeader
         eyebrow="Contacto"
+        subheading="HABLEMOS"
         title="Cuéntanos en qué podemos ayudarte"
         description="Respondemos en menos de 24 horas."
       />
