@@ -9,9 +9,9 @@ type StatsBarProps = {
 
 export default function StatsBar({ stats }: StatsBarProps) {
   return (
-    <div className="grid grid-cols-2 gap-6 rounded-xl bg-gray-light py-6 dark:bg-bg-color-dark sm:grid-cols-4">
+    <div className="grid grid-cols-2 gap-6 rounded-xl bg-transparent py-6 dark:bg-bg-color-dark sm:grid-cols-4">
       {stats.map((stat) => (
-        <div key={stat.label} className="text-center">
+        <div key={stat.label} className="text-left">
           <div className="text-2xl font-bold text-black dark:text-white">
             {stat.value}
           </div>

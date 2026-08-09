@@ -18,8 +18,8 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-stroke-stroke bg-white/90 backdrop-blur dark:border-stroke-dark dark:bg-black/90">
-      <div className="container flex h-16 items-center justify-center">
-        <Link href="/" className="flex items-center mx-4">
+      <div className="container flex h-16 items-center justify-between lg:justify-center">
+        <Link href="/" className="flex items-center lg:mx-4">
           <Image
             src="/images/logo/logo.png"
             alt="DynamicData"
