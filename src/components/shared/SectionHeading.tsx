@@ -41,7 +41,7 @@ export default function SectionHeading({
       )}
 
       <h2
-        className={`mt-5 mb-3 text-sm font-bold sm:text-sm ${
+        className={`mt-5 mb-3 text-sm font-semibold sm:text-sm ${
           isDark ? "text-primary-medium" : "text-primary-medium dark:text-white"
         }`}
       >
