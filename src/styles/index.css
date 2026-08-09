@@ -39,6 +39,13 @@ layer(base);
   --color-stroke-stroke: #e3e8ef;
   --color-stroke-dark: #353943;
 
+  --color-light-ice-blue: #E6F1FB;
+  --color-light-pink: #FBEAF0;
+  --color-light-peach: #FAECE7;
+  --color-light-indigo: #EEEDFE;
+
+
+
   --color-gray-50: #f9fafb;
   --color-gray-100: #f3f4f6;
   --color-gray-200: #e5e7eb;

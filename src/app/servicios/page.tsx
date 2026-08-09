@@ -19,7 +19,11 @@ export default function ServiciosPage() {
       <ServicesListSection />
       <CtaBanner
         title="¿No sabes cuál de estos servicios necesitas?"
-        buttonLabel="Agenda una asesoría"
+        description="Cuéntanos qué te trae por aquí y te ayudamos a descubrirlo, sin compromiso."
+        buttonLabel="Hablemos de tu proyecto"
+        buttonColor="!bg-peach"
+        buttonHoverColor="!bg-peach/90"
+        buttonTextColor="!text-white"
       />
     </>
   );
