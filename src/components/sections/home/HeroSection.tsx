@@ -11,11 +11,11 @@ const stats = [
 
 export default function HeroSection() {
   return (
-    <section className=" flex relative overflow-hidden bg-brand-light py-8 dark:bg-bg-color-dark">
+    <section className=" flex relative overflow-hidden bg-brand-light py-8 dark:bg-bg-color-dark select-none">
       <DecorativeShapes />
       <div className="container relative max-w-2xl">
         <span className="text-primary-medium text-xs font-semibold">SOLUCIONES DIGITALES</span>
-        <h1 className="mb-4 text-3xl font-bold text-navy dark:text-white sm:text-4xl lg:text-6xl">
+        <h1 className="mb-4 text-3xl font-bold text-navy dark:text-white sm:text-4xl lg:text-5xl">
           Moderniza tu operación, sin frenar tu{" "}
           <span className="text-primary-medium">crecimiento.</span>
         </h1>
