@@ -24,6 +24,7 @@ export default function WorkflowPreviewSection() {
           subheading="CÓMO TRABAJAMOS"
           subheadingColor="text-primary-light"
           title="Tres pasos, sin sorpresas"
+          description="Un proceso simple para que sepas siempre en qué etapa está tu proyecto."
           theme="dark"
         />
         <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-3">
