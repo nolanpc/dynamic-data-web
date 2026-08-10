@@ -20,7 +20,7 @@ export default function SectionHeading({
   const isDark = theme === "dark";
 
   return (
-    <div className={`max-w-2xl px-10 ${align === "center" ? "mx-auto text-center" : ""}`}>
+    <div className={`max-w-2xl ${align === "center" ? "mx-auto text-center" : ""}`}>
 
       {eyebrow && (
         <nav aria-label="Breadcrumb" className="mb-2 block text-sm font-semibold tracking-wide">
