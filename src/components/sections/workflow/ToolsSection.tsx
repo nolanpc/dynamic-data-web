@@ -1,32 +1,37 @@
 import SectionHeading from "@/components/shared/SectionHeading";
+import Card from "@/components/ui/Card";
 
 const categories = [
-  { title: "Frontend", tools: ["Next.js", "React", "Tailwind CSS"] },
-  { title: "Backend", tools: ["Node.js", "PostgreSQL"] },
-  { title: "Hosting / Deploy", tools: ["Vercel", "Docker"] },
-  { title: "Testing / QA", tools: ["Playwright", "Vitest"] },
-  { title: "Automatización", tools: ["n8n", "Zapier"] },
-  { title: "Comunicación directa", tools: ["Slack", "Email"] },
+  { title: "Desarrollo", tools: ["React", "Next.js", "HTML/CSS moderno"] },
+  { title: "Diseño", tools: ["Figma"] },
+  { title: "Gestión de proyecto", tools: ["Notion", "Trello"] },
+  { title: "Comunicación", tools: ["WhatsApp", "correo", "videollamada"] },
+  { title: "Hosting y publicación", tools: ["Vercel", "Netlify"] },
+  { title: "Automatización", tools: ["Zapier", "Make"] },
+  { title: "Analítica", tools: ["Google Analytics", "Search Console"] },
+  { title: "Control de versiones", tools: ["GitHub"] },
 ];
 
 export default function ToolsSection() {
   return (
-    <section className="container py-16">
-      <SectionHeading title="Herramientas y tecnología" />
-      <div className="mt-10 grid grid-cols-2 gap-8 sm:grid-cols-3">
-        {categories.map((category) => (
-          <div key={category.title}>
-            <h4 className="mb-2 text-sm font-semibold text-black dark:text-white">
-              {category.title}
-            </h4>
-            <ul className="space-y-1 text-sm text-body-color dark:text-body-color-dark">
-              {category.tools.map((tool) => (
-                <li key={tool}>{tool}</li>
-              ))}
-            </ul>
+    <section className="pt-16">
+      <div className="w-full px-6 sm:px-60 lg:px-80">
+        <div className="space-y-8">
+          <SectionHeading paddingX="px-0" title="Herramientas y tecnología" />
+          <div className="mt-10 grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-4">
+            {categories.map((category) => (
+              <Card key={category.title} className="flex flex-col p-6">
+                <h3 className="mb-2 text-sm font-semibold text-navy dark:text-white">
+                  {category.title}
+                </h3>
+                <p className="text-xs text-gray-500 dark:text-body-color-dark">
+                  {category.tools.join(", ")}
+                </p>
+              </Card>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
-    </section>
+    </section>    
   );
 }

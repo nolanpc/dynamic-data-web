@@ -7,6 +7,7 @@ type SectionHeadingProps = {
   description?: string;
   align?: "left" | "center";
   theme?: "light" | "dark";
+  paddingX?: string;
 };
 
 export default function SectionHeading({
@@ -15,12 +16,13 @@ export default function SectionHeading({
   title,
   description,
   align = "left",
+  paddingX = "px-10",
   theme = "light",
 }: SectionHeadingProps) {
   const isDark = theme === "dark";
 
   return (
-    <div className={`max-w-2xl px-10 ${align === "center" ? "mx-auto text-center" : ""}`}>
+    <div className={`max-w-2xl ${paddingX} ${align === "center" ? "mx-auto text-center" : ""}`}>
 
       {eyebrow && (
         <nav aria-label="Breadcrumb" className="mb-2 block text-sm font-semibold tracking-wide">

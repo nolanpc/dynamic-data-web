@@ -86,7 +86,7 @@ const services = [
 export default function ServicesListSection() {
   return (
     <section className="py-16">
-      <div className="w-full px-6 sm:px-60 lg:px-38">
+      <div className="w-full px-6 sm:px-60 lg:px-70">
         <div className="space-y-8">
           {services.map((service) => (
             <Card key={service.title} className="grid gap-6 md:grid-cols-2 items-start border-0 !shadow-none bg-transparent">
@@ -109,13 +109,8 @@ export default function ServicesListSection() {
                         {index + 1}
                       </div>
                       <div>
-<<<<<<< HEAD
                         <span className="block text-base font-bold text-navy">
                           {bullet.title}
-=======
-                        <span className="block text-base text-navy">
-                          <strong>{bullet.title}</strong>
->>>>>>> afa332e3def006be833ac18717643438809ac76b
                         </span>
                         <span className="block text-sm text-gray-500 dark:text-navy mt-1">
                           {bullet.description}

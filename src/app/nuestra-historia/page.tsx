@@ -23,9 +23,9 @@ export default function NuestraHistoriaPage() {
       <TeamSection />
       <ValuesSection />
       <CtaBanner
-        title="¿Quieres ser parte de nuestra primera historia?"
-        description="Cuentanos sobre tu negocio — nos encantaria conocerlo."
-        buttonLabel="Hablemos de tu proyecto"
+        title="¿Listos para el primer paso?"
+        description="El diagnóstico inicial no tiene costo ni compromiso — solo una conversación honesta sobre tu negocio."
+        buttonLabel="Agenda tu diagnóstico"
       />
     </>
   );
