@@ -8,6 +8,8 @@ export type ContactPayload = {
   name: string;
   email: string;
   message: string;
+  company?: string;
+  service?: string;
 };
 
 export function validateContactPayload(data: any): ContactPayload {
@@ -15,9 +17,11 @@ export function validateContactPayload(data: any): ContactPayload {
     throw new Error("Los datos enviados no son válidos.");
   }
 
-  const name = String(data.name || "").trim();
+  const name = String(data.fullname || "").trim();
   const email = String(data.email || "").trim();
   const message = String(data.message || "").trim();
+  const company = String(data.company || "").trim();
+  const service = String(data.service || "").trim();
 
   if (!name || !email || !message) {
     throw new Error("Todos los campos son obligatorios.");
@@ -61,7 +65,7 @@ export async function sendContactEmail(payload: ContactPayload) {
   }
 
   const subject = "Nuevo mensaje desde el formulario de contacto de tu sitio web";
-  const text = `Nombre: ${payload.name}\nCorreo: ${payload.email}\n\nMensaje:\n${payload.message}`;
+  const text = `Nombre: ${payload.name}\nCorreo: ${payload.email}\nEmpresa: ${payload.company}\nServicio: ${payload.service}\n\nMensaje:\n${payload.message} `;
 
   // --- IMPLEMENTACIÓN CON RESEND ---
   const resendApiKey = process.env.RESEND_API_KEY;

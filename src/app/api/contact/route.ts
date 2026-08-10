@@ -5,9 +5,11 @@ export async function POST(request: NextRequest) {
   try {
     const payload = await request.json();
     console.log("[contact] Request received:", {
-      name: payload?.name,
       email: payload?.email,
       message: payload?.message,
+      fullname: payload?.fullname,
+      company: payload?.company,
+      service: payload?.service,
     });
 
     const contactData = validateContactPayload(payload);

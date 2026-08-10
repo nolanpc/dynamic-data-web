@@ -40,7 +40,7 @@ export default function ContactFormSection() {
     const form = new FormData(formElement);
 
     try {
-      const response = await fetch("http://localhost:3001/mailing/contact-us", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
