@@ -12,11 +12,11 @@ const values = [
 
 export default function ValuesSection() {
   return (
-    <section className="container py-16">
+    <section className="container py-16 lg:px-35">
       <SectionHeading title="Nuestros valores" />
       <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {values.map((value) => (
-          <FeatureCard key={value.title} {...value} />
+        {values.map((value, index) => (
+          <FeatureCard key={value.title} {...value} index={index} />
         ))}
       </div>
     </section>

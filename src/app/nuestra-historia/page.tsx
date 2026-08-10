@@ -17,7 +17,12 @@ export default function NuestraHistoriaPage() {
         eyebrow="Nuestra historia"
         subheading="QUIÉNES SOMOS"
         title="Estamos empezando — y lo decimos con orgullo"
-        description="Un equipo nuevo, con toda la atención puesta en cada proyecto."
+        description="Dynamic Data es un equipo nuevo con ganas de demostrar lo que
+        sabe hacer. Eso significa precios más accesibles mientras
+        construimos nuestro portafolio, comunicación directa con quien de
+        verdad hace el trabajo, y un compromiso real con que tu proyecto
+        salga bien — porque también es el nuestro."
+        px="lg:px-40"
       />
       <StoryIntroSection />
       <TeamSection />
