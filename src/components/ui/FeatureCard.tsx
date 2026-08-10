@@ -8,7 +8,7 @@ type FeatureCardProps = {
   index?: number;
 };
 
-export default function FeatureCard({ icon, color, title, description, index=0 }: FeatureCardProps) {
+export default function FeatureCard({ icon, color, title, description, index=undefined }: FeatureCardProps) {
   return (
     <Card>
 
