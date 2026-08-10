@@ -15,9 +15,12 @@ const categories = [
 export default function ToolsSection() {
   return (
     <section className="pt-16">
-      <div className="w-full px-6 sm:px-60 lg:px-80">
+      <div className="w-full px-6 sm:px-60 lg:px-44">
         <div className="space-y-8">
-          <SectionHeading paddingX="px-0" title="Herramientas y tecnología" />
+          <SectionHeading 
+            title="Herramientas y tecnología" 
+            description="Elegimos herramientas probadas y modernas para cada tipo de proyecto — no la más nueva por moda, sino la correcta para lo que necesitas."
+          />
           <div className="mt-10 grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-4">
             {categories.map((category) => (
               <Card key={category.title} className="flex flex-col p-6">

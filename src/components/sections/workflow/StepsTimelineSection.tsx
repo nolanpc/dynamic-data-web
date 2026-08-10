@@ -30,7 +30,7 @@ const steps = [
 export default function StepsTimelineSection() {
   return (
     <section className="pt-16">
-      <div className="w-full px-6 sm:px-60 lg:px-80">
+      <div className="w-full px-6 sm:px-60 lg:px-44">
         <div className="space-y-8">
           {steps.map((step, index) => (
             <StepItem key={step.number} numberBgColor={step.numberBgColor} numberColor={step.numberColor} variant="detailed" {...step} isLast={index === steps.length - 1} />

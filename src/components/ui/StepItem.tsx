@@ -38,7 +38,7 @@ export default function StepItem({
       </div>
 
       <div className="pb-12">
-        <h4 className={`mb-1 text-xl font-bold ${isDark ? "text-white" : "text-black dark:text-white"}`}>
+        <h4 className={`mb-1 text-xl font-bold ${isDark ? "text-white" : "text-navy dark:text-white"}`}>
           {title}
         </h4>
         <p className={`text-base ${isDark ? "text-white/70" : "text-body-color dark:text-body-color-dark"}`}>

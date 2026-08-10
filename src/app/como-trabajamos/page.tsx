@@ -18,6 +18,7 @@ export default function ComoTrabajamosPage() {
         subheading="NUESTRO PROCESO"
         title="Tres pasos, sin sorpresas ni letra chica"
         description="Sabemos que &ldquo;confiar en una empresa nueva&rdquo; da un poco de nervio. Por eso somos extra claros en cómo trabajamos — para que sepas exactamente qué esperar en cada etapa."
+        px="lg:px-40"
       />
       <StepsTimelineSection />
       <CommunicationSection />
