@@ -19,12 +19,12 @@ const steps = [
     title: "Lanzamiento rápido", description: "Publicamos, medimos resultados reales y seguimos optimizando contigo después del lanzamiento." },
 ];
 
-const stats = [
-  { value: "0", label: "Sorpresas" },
-  { value: "100%", label: "Transparencia" },
-  { value: "24h", label: "Respuesta" },
-  { value: "1", label: "Punto de contacto" },
-];
+// const stats = [
+//   { value: "0", label: "Sorpresas" },
+//   { value: "100%", label: "Transparencia" },
+//   { value: "24h", label: "Respuesta" },
+//   { value: "1", label: "Punto de contacto" },
+// ];
 
 export default function WorkflowPreviewSection() {
   return (
@@ -44,9 +44,9 @@ export default function WorkflowPreviewSection() {
             <StepHomeItem key={step.number} variant="compact" theme="dark" {...step} isLast={index === steps.length - 1} />
           ))}
         </div>
-        <div className="mt-10">
+        {/* <div className="mt-10">
           <StatsBar stats={stats} />
-        </div>
+        </div> */}
       </div>
     </section>
   );

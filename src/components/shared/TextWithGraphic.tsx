@@ -3,6 +3,7 @@ import DecorativeShapes from "./DecorativeShapes";
 
 type TextWithGraphicProps = {
   eyebrow?: string;
+  subheading?: string;
   title: string;
   description?: string;
   reverse?: boolean;
@@ -10,6 +11,7 @@ type TextWithGraphicProps = {
 
 export default function TextWithGraphic({
   eyebrow,
+  subheading,
   title,
   description,
   reverse = false,
@@ -22,10 +24,10 @@ export default function TextWithGraphic({
         }`}
       >
         <div className="flex-1">
-          <SectionHeading eyebrow={eyebrow} title={title} description={description} />
+          <SectionHeading eyebrow={eyebrow} title={title} subheading={subheading} description={description} />
         </div>
         <div className="relative flex-1">
-          <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-primary-light/15 dark:bg-bg-color-dark">
+          <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-brand-light dark:bg-bg-color-dark">
             <DecorativeShapes />
           </div>
         </div>

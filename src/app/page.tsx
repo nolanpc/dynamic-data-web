@@ -4,6 +4,7 @@ import ServicesPreviewSection from "@/components/sections/home/ServicesPreviewSe
 import WorkflowPreviewSection from "@/components/sections/home/WorkflowPreviewSection";
 import StoryPreviewSection from "@/components/sections/home/StoryPreviewSection";
 import CtaBanner from "@/components/shared/CtaBanner";
+import StatsBarPreviewSection from "@/components/sections/home/StatsBarPreviewSection";
 
 export const metadata: Metadata = {
   title: "Dynamic Data",
@@ -16,6 +17,7 @@ export default function Home() {
       <HeroSection />
       <ServicesPreviewSection />
       <WorkflowPreviewSection />
+      <StatsBarPreviewSection />
       <StoryPreviewSection />
       <CtaBanner
         title="¿Listos para modernizar tu operación?"
