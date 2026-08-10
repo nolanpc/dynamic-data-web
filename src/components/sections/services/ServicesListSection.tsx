@@ -109,11 +109,7 @@ export default function ServicesListSection() {
                         {index + 1}
                       </div>
                       <div>
-<<<<<<< HEAD
                         <span className="block text-base font-bold text-navy">
-=======
-                        <span className="block text-base font-semibold text-navy">
->>>>>>> 2160c23e51fffa33e39e89ebb30817e65e74f490
                           {bullet.title}
                         </span>
                         <span className="block text-sm text-gray-500 dark:text-navy mt-1">
