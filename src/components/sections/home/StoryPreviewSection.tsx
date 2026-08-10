@@ -3,7 +3,7 @@ import TextWithGraphic from "@/components/shared/TextWithGraphic";
 export default function StoryPreviewSection() {
   return (
     <>
-      <div className="px-30">
+      <div className="lg:px-30">
         <TextWithGraphic
           eyebrow={undefined}
           title="Estamos empezando — y lo decimos con orgullo"

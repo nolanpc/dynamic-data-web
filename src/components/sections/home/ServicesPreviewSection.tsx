@@ -30,7 +30,7 @@ const services = [
 
 export default function ServicesPreviewSection() {
   return (
-    <section className="container py-16 px-35">
+    <section className="container py-16 lg:px-35">
       <SectionHeading
         eyebrow={undefined}
         subheading="QUÉ HACEMOS"

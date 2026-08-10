@@ -15,7 +15,7 @@ export default function TextWithGraphic({
   reverse = false,
 }: TextWithGraphicProps) {
   return (
-    <section className="container py-16 px-30">
+    <section className="container py-16 lg:px-30">
       <div
         className={`flex flex-col items-center gap-10 md:flex-row ${
           reverse ? "md:flex-row-reverse" : ""
