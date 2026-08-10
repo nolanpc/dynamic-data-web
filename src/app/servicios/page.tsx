@@ -16,6 +16,7 @@ export default function ServiciosPage() {
         subheading="QUÉ HACEMOS"
         title="Cuatro formas de mover tu negocio hacia adelante"
         description="No creemos en soluciones genéricas. Cada servicio empieza con una conversación sobre cómo operas hoy, para que lo que construyamos resuelva algo real — no para venderte más de lo que necesitas."
+        px="lg:px-40"
       />
       <ServicesListSection />
       <CtaBanner

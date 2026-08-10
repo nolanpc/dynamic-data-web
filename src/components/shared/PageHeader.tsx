@@ -5,11 +5,12 @@ type PageHeaderProps = {
   subheading?: string;
   title: string;
   description?: string;
+  px?: string;
 };
 
-export default function PageHeader({ eyebrow, subheading, title, description }: PageHeaderProps) {
+export default function PageHeader({ eyebrow, subheading, title, description, px="" }: PageHeaderProps) {
   return (
-    <section className="flex relative overflow-hidden bg-brand-light py-8 dark:bg-bg-color-dark select-none">
+    <section className={`flex relative overflow-hidden bg-brand-light py-8 dark:bg-bg-color-dark select-none ${px}`}>
       <div className="container relative max-w-5xl">
           <SectionHeading eyebrow={eyebrow} subheading={subheading} title={title} description={description} />
       </div>
