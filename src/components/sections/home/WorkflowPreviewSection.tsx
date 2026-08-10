@@ -17,10 +17,12 @@ const stats = [
 
 export default function WorkflowPreviewSection() {
   return (
-    <section className="bg-navy py-16 px-30">
+    <section className="bg-navy py-16 px-32">
       <div className="container">
         <SectionHeading
           eyebrow={undefined}
+          subheading="CÓMO TRABAJAMOS"
+          subheadingColor="text-primary-light"
           title="Tres pasos, sin sorpresas"
           theme="dark"
         />
