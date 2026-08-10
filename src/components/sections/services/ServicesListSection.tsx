@@ -105,11 +105,15 @@ export default function ServicesListSection() {
                 {service.bullets.map((bullet, index) => (
                   <div key={index} className="bg-brand-light rounded-lg p-4 text-sm text-body-color dark:text-body-color-dark">
                     <div className="flex items-start gap-4 w-full">
-                      <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-white text-primary text-sm">
+                      <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-white text-primary text-sm font-semibold">
                         {index + 1}
                       </div>
                       <div>
+<<<<<<< HEAD
                         <span className="block text-base font-bold text-navy">
+=======
+                        <span className="block text-base font-semibold text-navy">
+>>>>>>> 2160c23e51fffa33e39e89ebb30817e65e74f490
                           {bullet.title}
                         </span>
                         <span className="block text-sm text-gray-500 dark:text-navy mt-1">

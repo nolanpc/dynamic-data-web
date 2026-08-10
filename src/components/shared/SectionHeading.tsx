@@ -3,6 +3,7 @@ import Link from "next/link";
 type SectionHeadingProps = {
   eyebrow?: string;
   subheading?: string;
+  subheadingColor?: string;
   title: string;
   description?: string;
   align?: "left" | "center";
@@ -13,6 +14,7 @@ type SectionHeadingProps = {
 export default function SectionHeading({
   eyebrow,
   subheading,
+  subheadingColor="text-primary-medium",
   title,
   description,
   align = "left",
@@ -44,7 +46,7 @@ export default function SectionHeading({
 
       <h2
         className={`mt-5 mb-3 text-sm font-semibold sm:text-sm ${
-          isDark ? "text-primary-medium" : "text-primary-medium dark:text-white"
+          isDark ? `${subheadingColor}` : "text-primary-medium dark:text-white"
         }`}
       >
         {subheading}
