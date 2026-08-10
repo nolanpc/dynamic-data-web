@@ -21,7 +21,7 @@ export default function CtaBanner({
   buttonTextColor = "!text-brand-dark",
 }: CtaBannerProps) {
   return (
-    <section className="w-full px-6 sm:px-12 lg:px-30 md:py-12 lg:py-12">
+    <section className="w-full px-6 sm:px-12 lg:px-42 md:py-12 lg:py-12">
       <div className="relative overflow-hidden rounded-2xl bg-navy px-8 py-12 md:py-12">
         <DecorativeShapes />
         <div className="grid grid-rows-[70%_1fr] md:grid-cols-[60%_1fr] md:flex-row items-center justify-between gap-4 md:gap-8">

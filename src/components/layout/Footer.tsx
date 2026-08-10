@@ -30,7 +30,7 @@ const columns = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-stroke-stroke bg-white dark:border-stroke-dark dark:bg-black lg:px-30">
+    <footer className="border-t border-stroke-stroke bg-white dark:border-stroke-dark dark:bg-black lg:px-40">
       <div className="container grid grid-cols-2 gap-8 py-12 md:grid-cols-4">
         <div>
           <Image
