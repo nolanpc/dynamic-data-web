@@ -15,11 +15,15 @@ export default function ContactoPage() {
         eyebrow="Contacto"
         subheading="HABLEMOS"
         title="Cuéntanos en qué podemos ayudarte"
-        description="Respondemos en menos de 24 horas."
+        description="Respondemos en menos de 24 horas. Sin formularios eternos, sin compromiso — solo una primera conversación para entender tu proyecto."
       />
-      <section className="container grid grid-cols-1 gap-10 py-16 md:grid-cols-2">
-        <ContactFormSection />
-        <ContactInfoSection />
+      <section className="py-0">
+        <div className="w-full px-6 sm:px-60 lg:px-70">
+          <div className="space-y-8 grid grid-cols-1 gap-2 py-16 md:grid-cols-2">
+            <ContactInfoSection />
+            <ContactFormSection />
+          </div>
+        </div>
       </section>
     </>
   );
